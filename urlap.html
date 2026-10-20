@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lorem ipsum</title>
+  <link rel="stylesheet" href="urlap.css">
+</head>
+
+<body>
+  <header class="oldal-fejlec">
+    <div class="logo-hely" aria-label="Logó helye"></div>
+
+    <nav aria-label="Fő navigáció">
+      <ul class="menu">
+        <li><a href="#elso">Menüpont 1</a></li>
+        <li><a href="#masodik">Menüpont 2</a></li>
+        <li><a href="urlap.html">űrlap</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <header class="kiemelt-fejlec" id="elso">
+      <h1>Lorem ipsum</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+        feugiat, augue sed luctus commodo, velit lorem gravida neque.
+      </p>
+    </header>
+
+    <section class="tartalom-elrendezes" id="masodik">
+      <article class="fo-tartalom">
+        <h2>Őszi szünet – kérdőív</h2>
+
+        <form action="#" method="get">
+
+          <fieldset>
+            <legend>Személyes adatok</legend>
+
+            <div class="mezö">
+              <label for="nev">Név</label>
+              <input type="text" id="nev" name="nev" placeholder="Kovács Anna" required>
+            </div>
+
+            <div class="mezö">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email" placeholder="anna@example.com" required>
+            </div>
+
+            <div class="mezö">
+              <label for="jelszo">Jelszó</label>
+              <input type="password" id="jelszo" name="jelszo" minlength="6">
+            </div>
+
+            <div class="mezö">
+              <label for="tel">Telefonszám </label>
+              <input type="tel" id="tel" name="tel" placeholder="+36 30 123 4567">
+            </div>
+
+            <div class="mezö">
+              <label for="weboldal">Weboldal </label>
+              <input type="url" id="weboldal" name="weboldal" placeholder="https://pelda.hu">
+            </div>
+
+            <div class="mezö">
+              <label for="kor">Életkor </label>
+              <input type="number" id="kor" name="kor" min="10" max="99" value="16">
+            </div>
+
+            <div class="mezö">
+              <label for="szuletes">Születési dátum (date)</label>
+              <input type="date" id="szuletes" name="szuletes">
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Programok az őszi szünetben</legend>
+
+            <div class="mezö">
+              <label for="szoveg">Mit fogsz csinálni az őszi szünetben? (text)</label>
+              <input type="text" id="szoveg" name="szoveg" placeholder="Elmegyek Olaszországba">
+            </div>
+
+            <div class="mezö">
+              <span class="cimke-szeru">Hol töltöd a szünetet? </span>
+              <div class="valasztas">
+                <input type="radio" id="otthon" name="hely" value="otthon" checked>
+                <label for="otthon">Otthon</label>
+              </div>
+              <div class="valasztas">
+                <input type="radio" id="belfold" name="hely" value="belfold">
+                <label for="belfold">Belföldön utazom</label>
+              </div>
+              <div class="valasztas">
+                <input type="radio" id="kulfold" name="hely" value="kulfold">
+                <label for="kulfold">Külföldre utazom</label>
+              </div>
+            </div>
+
+            <div class="mezö">
+              <span class="cimke-szeru">Mivel foglalkozol szívesen? </span>
+              <div class="valasztas">
+                <input type="checkbox" id="olvasas" name="tevekenyseg" value="olvasas">
+                <label for="olvasas">Olvasás</label>
+              </div>
+              <div class="valasztas">
+                <input type="checkbox" id="sport" name="tevekenyseg" value="sport">
+                <label for="sport">Sport</label>
+              </div>
+              <div class="valasztas">
+                <input type="checkbox" id="jatek" name="tevekenyseg" value="jatek">
+                <label for="jatek">Számítógépes játékok</label>
+              </div>
+              <div class="valasztas">
+                <input type="checkbox" id="baratok" name="tevekenyseg" value="baratok">
+                <label for="baratok">Barátokkal találkozás</label>
+              </div>
+              <div class="valasztas">
+                <input type="checkbox" id="tanulas" name="tevekenyseg" value="tanulas">
+                <label for="tanulas">Tanulás</label>
+              </div>
+            </div>
+
+            <div class="mezö">
+              <label for="kedvenc">Kedvenc őszi gyümölcs</label>
+              <select id="kedvenc" name="kedvenc">
+                <option value="">-- Válassz --</option>
+                <option value="alma">Alma</option>
+                <option value="korte">Körte</option>
+                <option value="szolo">Szőlő</option>
+                <option value="dio">Dió</option>
+              </select>
+            </div>
+
+            <div class="mezö">
+              <label for="varos">Úticél </label>
+              <input list="varosok" id="varos" name="varos" placeholder="Kezdj el gépelni...">
+              <datalist id="varosok">
+                <option value="Budapest">
+                <option value="Debrecen">
+                <option value="Pécs">
+                <option value="Róma">
+                <option value="Bécs">
+                <option value="Prága">
+              </datalist>
+            </div>
+
+            <div class="mezö">
+              <label for="terv">Részletesebb terv</label>
+              <textarea id="terv" name="terv" rows="4" placeholder="Írd le, mit terveztél..."></textarea>
+            </div>
+          </fieldset>
+
+          
+          <fieldset>
+            <legend>Időpontok és hangulat</legend>
+
+            <div class="mezö">
+              <label for="kezdet">A szünet kezdete</label>
+              <input type="date" id="kezdet" name="kezdet">
+            </div>
+
+            <div class="mezö">
+              <label for="idopont">Találkozó időpontja</label>
+              <input type="datetime-local" id="idopont" name="idopont">
+            </div>
+
+            <div class="mezö">
+              <label for="ebred">Mikor kelsz fel általában? </label>
+              <input type="time" id="ebred" name="ebred" value="09:00">
+            </div>
+
+            <div class="mezö">
+              <label for="honap">Melyik hónap a kedvenced?</label>
+              <input type="month" id="honap" name="honap">
+            </div>
+
+            <div class="mezö">
+              <label for="het">Melyik héten utazol?</label>
+              <input type="week" id="het" name="het">
+            </div>
+
+            <div class="mezö">
+              <label for="hangulat">Mennyire várod a szünetet? </label>
+              <input type="range" id="hangulat" name="hangulat" min="1" max="10" value="5"
+                oninput="ertek.value = this.value">
+              <output id="ertek" for="hangulat">5</output> / 10
+            </div>
+
+            <div class="mezö">
+              <label for="szin">Kedvenc őszi színed </label>
+              <input type="color" id="szin" name="szin" value="#d2691e">
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Egyéb</legend>
+
+            <div class="mezö">
+              <label for="fotok">Fotó a tavalyi szünetről </label>
+              <input type="file" id="fotok" name="fotok" accept="image/*" multiple>
+            </div>
+
+            <div class="mezö">
+              <label for="kereses">Keresés </label>
+              <input type="search" id="kereses" name="kereses" placeholder="Keress valamit...">
+            </div>
+
+            <div class="valasztas">
+              <input type="checkbox" id="hirlevel" name="hirlevel" value="igen">
+              <label for="hirlevel">Feliratkozom a hírlevélre</label>
+            </div>
+
+            <div class="valasztas">
+              <input type="checkbox" id="elfogad" name="elfogad" value="igen" required>
+              <label for="elfogad">Elfogadom az adatkezelési feltételeket</label>
+            </div>
+
+            <input type="hidden" name="urlap_azonosito" value="oszi-szunet-2026">
+          </fieldset>
+
+          <div class="urlap-gombok">
+            <input type="submit" value="Küldés">
+            <input type="reset" value="Törlés">
+            <button type="button" onclick="alert('Köszönjük a kitöltést!')">Gomb </button>
+          </div>
+
+        </form>
+      </article>
+
+      <aside id="harmadik">
+        <h2>Lorem ipsum</h2>
+
+        <section class="oldalsas-doboz">
+          <h3>Lorem ipsum</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </section>
+
+        <section class="oldalsas-doboz">
+          <h3>Lorem ipsum</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </section>
+
+        <section class="oldalsas-doboz">
+          <h3>Lorem ipsum</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </section>
+      </aside>
+    </section>
+  </main>
+
+  <footer>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <p>Quisque vitae libero vel lorem tincidunt ullamcorper.</p>
+  </footer>
+</body>
+
+</html>
